@@ -15,6 +15,9 @@
 		C6C74D811D4ED5D60077DE1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C74D7F1D4ED5D60077DE1A /* LaunchScreen.storyboard */; };
 		C6C74D8C1D4ED5D60077DE1A /* JSPatch__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C74D8B1D4ED5D60077DE1A /* JSPatch__Tests.m */; };
 		C6C74D971D4ED5D60077DE1A /* JSPatch__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C74D961D4ED5D60077DE1A /* JSPatch__UITests.m */; };
+		C6C74DA51D4ED5F40077DE1A /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C74DA41D4ED5F40077DE1A /* JSPatch.framework */; };
+		C6C74DA71D4ED6090077DE1A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C74DA61D4ED6090077DE1A /* JavaScriptCore.framework */; };
+		C6C74DA91D4ED6370077DE1A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C74DA81D4ED6370077DE1A /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		C6C74D921D4ED5D60077DE1A /* JSPatch初探UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JSPatch初探UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C74D961D4ED5D60077DE1A /* JSPatch__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSPatch__UITests.m; sourceTree = "<group>"; };
 		C6C74D981D4ED5D60077DE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6C74DA41D4ED5F40077DE1A /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatch.framework; sourceTree = "<group>"; };
+		C6C74DA61D4ED6090077DE1A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		C6C74DA81D4ED6370077DE1A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C74DA91D4ED6370077DE1A /* libz.tbd in Frameworks */,
+				C6C74DA71D4ED6090077DE1A /* JavaScriptCore.framework in Frameworks */,
+				C6C74DA51D4ED5F40077DE1A /* JSPatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,9 @@
 		C6C74D651D4ED5D60077DE1A = {
 			isa = PBXGroup;
 			children = (
+				C6C74DA81D4ED6370077DE1A /* libz.tbd */,
+				C6C74DA61D4ED6090077DE1A /* JavaScriptCore.framework */,
+				C6C74DA41D4ED5F40077DE1A /* JSPatch.framework */,
 				C6C74D701D4ED5D60077DE1A /* JSPatch初探 */,
 				C6C74D8A1D4ED5D60077DE1A /* JSPatch初探Tests */,
 				C6C74D951D4ED5D60077DE1A /* JSPatch初探UITests */,
@@ -411,6 +423,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "JSPatch初探/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengyue58.wll.JSPatch--";
@@ -422,6 +438,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "JSPatch初探/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengyue58.wll.JSPatch--";
@@ -496,6 +516,7 @@
 				C6C74D9D1D4ED5D60077DE1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6C74D9E1D4ED5D60077DE1A /* Build configuration list for PBXNativeTarget "JSPatch初探Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				C6C74DA01D4ED5D60077DE1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6C74DA11D4ED5D60077DE1A /* Build configuration list for PBXNativeTarget "JSPatch初探UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +534,7 @@
 				C6C74DA31D4ED5D60077DE1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
